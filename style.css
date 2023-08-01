@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+input {
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+header,
+footer {
+  height: 50px;
+  box-shadow: 0 0 10px 0 #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main {
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  box-shadow: 0 0 10px 0 #00000080;
+}
+#allProducts {
+  display: flex;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+#productsArea {
+  width: 70%;
+  box-shadow: 0 0 10px 0 #00000080;
+  padding: 20px;
+}
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+#cartDiv {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 20px 20px;
+  box-shadow: 0 0 10px 0 #00000080;
+}
+#cartDiv h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+#cartDiv .cartProduct {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+}
+#cartDiv img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+#cartDiv input {
+  width: 40px;
+  padding: 5px 0 5px 5px;
+  text-align: center;
+  margin: 0 5px;
+}
+#cartDiv p {
+  font-size: 16px;
+  margin: 0 5px;
+}
+#cartDiv .cartProductPrice {
+  width: 50px;
+  text-align: center;
+}
+#cartDiv h3 {
+  margin: 0 5px;
+  width: 90px;
+}
+#cartDiv .RemoveBTN {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+.product {
+  color: black;
+  text-align: center;
+  width: 25%;
+  margin: 1%;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 #00000080;
+  border-radius: 20px;
+}
+.product h3 {
+  font-size: 30px;
+  text-shadow: -2px -2px 2px #00000050;
+}
+.product .productImage {
+  height: calc(50% - 10px);
+  object-fit: cover;
+}
+.product .amountP {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.product .amountP label {
+  display: inline-block;
+}
+.product .amountP input {
+  display: inline-block;
+  width: 25%;
+  margin-left: 5px;
+  padding-right: 0;
+}
+.product .AddToCartBtn,
+.product .RemoveProductBTN {
+  background-color: rgb(9, 255, 9);
+  cursor: pointer;
+}
+.product .AddToCartBtn:hover,
+.product .RemoveProductBTN:hover {
+  box-shadow: 0 0 8px 2px #008000a3;
+}
+#adminForms {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #00000080;
+}
+#addProduct {
+  width: 50%;
+  padding: 20px;
+  background-color: #d58fe5;
+}
+#addProduct label {
+  width: 100%;
+  margin: 20px 0 5px;
+  display: block;
+}
+
+#addProduct input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+#submitProduct {
+  margin-top: 20px;
+  cursor: pointer;
+}
+#submitProduct:hover {
+  box-shadow: 0 0 10px 0 #00000080;
+}
+
+#EditProduct {
+  width: 50%;
+  padding: 20px;
+  background-color: #f4c5f0;
+}
+#EditProduct label {
+  width: 100%;
+  margin: 20px 0 5px;
+  display: block;
+}
+
+#EditProduct input,
+#EditProduct select {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+#submitEditProduct {
+  margin-top: 20px;
+  cursor: pointer;
+}
+#submitEditProduct:hover {
+  box-shadow: 0 0 10px 0 #00000080;
+}

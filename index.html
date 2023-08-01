@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Store</title>
+    <script type="module" src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>My Store</h1></header>
+
+    <div id="main">
+      <div id="allProducts">
+        <div id="cartDiv">
+          <h2>The Cart</h2>
+          <div id="cart"></div>
+        </div>
+        <div id="productsArea">
+          <h2>My Products</h2>
+          <div id="products"></div>
+        </div>
+      </div>
+      <div id="adminForms">
+        <!-- add product div -->
+        <div id="addProduct" style="text-align: center">
+          <h3>Add a Product</h3>
+          <label for="theID">Product ID:</label>
+          <input
+            type="number"
+            name="theID"
+            id="theID"
+            placeholder="Product ID"
+            min="0"
+          />
+          <label for="theTitle">Product Title:</label>
+          <input
+            type="text"
+            name="theTitle"
+            id="theTitle"
+            placeholder="Product Title"
+          />
+          <label for="theImage">Product Image:</label>
+          <input
+            type="url"
+            name="theImage"
+            id="theImage"
+            placeholder="Product Title"
+          />
+          <label for="theDesc">Product Description:</label>
+          <input
+            type="text"
+            name="theDesc"
+            id="theDesc"
+            placeholder="Product Description"
+          />
+          <label for="thePrice">Product Price:</label>
+          <input
+            type="number"
+            name="thePrice"
+            id="thePrice"
+            placeholder="Product Price"
+            min="0"
+          />
+          <input type="submit" value="Add Product" id="submitProduct" />
+        </div>
+        <!-- edit product: -->
+        <div id="EditProduct" style="text-align: center">
+          <h3>Edit a Product</h3>
+          <label for="theEditTitle">Product Title:</label>
+          <select name="theEditTitle" id="theEditTitle">
+            <option value="0">Choose a Product to Edit..</option>
+          </select>
+
+          <label for="theEditImage">Product Image:</label>
+          <input
+            type="url"
+            name="theEditImage"
+            id="theEditImage"
+            placeholder="Product Image"
+            value=""
+          />
+          <label for="theEditDesc">Product Description:</label>
+          <input
+            type="text"
+            name="theEditDesc"
+            id="theEditDesc"
+            placeholder="Product Description"
+          />
+          <label for="theEditPrice">Product Price:</label>
+          <input
+            type="number"
+            name="theEditPrice"
+            id="theEditPrice"
+            placeholder="Product Price"
+            min="0"
+          />
+          <input type="submit" value="Edit Product" id="submitEditProduct" />
+        </div>
+      </div>
+    </div>
+
+    <footer><p>All rights reserved!</p></footer>
+  </body>
+</html>
